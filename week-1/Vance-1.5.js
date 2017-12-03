@@ -17,7 +17,7 @@ var hireDate0 = new Date(2014, 5, 1)
 
 
 var employee0 = "\n" + firstName0 + "\n" + lastName0 + "\n"
-    + address0 + "\n" + payRate0+ "\nDate: " + hireDate0;
+    + address0 + "\n" + payRate0+ "\nDate Hired: " +  hireDate0;
 
 console.log(employee0);
 console.log("\n");
@@ -30,7 +30,7 @@ var hireDate1 = new Date(2012, 1, 9)
 
 
 var employee1 = "\n" + firstName1 + "\n" + lastName1 + "\n"
-    + address1 + "\n" + payRate1+ "\nDate: " + hireDate1;
+    + address1 + "\n" + payRate1+ "\nDate Hired: " + hireDate1;
 
 console.log(employee1);
 console.log("\n");
@@ -43,7 +43,7 @@ var hireDate2 = new Date(2017, 2, 6)
 
 
 var employee2 = "\n" + firstName2 + "\n" + lastName2 + "\n"
-    + address2 + "\n" + payRate2+ "\nDate: " + hireDate2;
+    + address2 + "\n" + payRate2+ "\nDate Hired: " + hireDate2;
 
 console.log(employee2);
 console.log("\n");
@@ -56,7 +56,7 @@ var hireDate3 = new Date(2014, 4, 3)
 
 
 var employee3 = "\n" + firstName3 + "\n" + lastName3 + "\n"
-    + address3 + "\n" + payRate3 + "\nDate: " + hireDate3;
+    + address3 + "\n" + payRate3 + "\nDate Hired: " + hireDate3;
 
 console.log(employee3);
 console.log("\n");
@@ -69,7 +69,7 @@ var hireDate4 = new Date(2016, 11, 7)
 
 
 var employee4 = "\n" + firstName4 + "\n" + lastName4 + "\n"
-    + address4 + "\n" + payRate4 + "\nDate: " + hireDate4;
+    + address4 + "\n" + payRate4 + "\nDate Hired: " + hireDate4;
 
 console.log(employee4);
 console.log("\n");
