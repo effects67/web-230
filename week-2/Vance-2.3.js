@@ -27,10 +27,13 @@ function myName() {
 }
 
 
+
+
 // output 
 
 console.log(header.display("Gabriel", "Vance", "Exercise 2.3")); 
 console.log('\n'+ "Hello" + " " + myName() + "!"); 
+
 
 
 
