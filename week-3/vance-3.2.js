@@ -26,19 +26,20 @@ var header = require('../header.js');
 
 // functions 
 function match(ex1,ex2) {
-	if (ex1!==ex2){
-	console.log(false);
+	if (ex1!=ex2){
+	return false;
 }
 	else {
-		console.log(true);
+		return true;
 } 
+}
 
 function logMismatch(ex1,ex2) {
 	console.log(ex1 + " " + "and" + " " + ex2 + " " + "do not match!");
 }
 
 function logMatch(ex1,ex2) {
-	console.log(ex1 + " " + "and" + " " + ex2 + " " + "do match!");
+    console.log(ex1 + " " + "and" + " " + ex2 + " " + "do match!");
 }
 
 // six (6) test variables 
@@ -61,7 +62,7 @@ console.log(match(2, 2));
 // Conditional "if...else" statements. Include checks for all six (6) test variables 
 
 
-if (t=c) {
+if (t==c) {
     logMatch(t,c);
 } else {
     logMismatch(t,c);
@@ -70,7 +71,7 @@ if (t=c) {
 
 
 
-if (b=bb) {
+if (b==bb) {
     logMatch(b,bb);
 } else {
     logMismatch(b,bb);
@@ -79,7 +80,7 @@ if (b=bb) {
 
 
 
-if (th=f) {
+if (th==f) {
     logMatch(th,f);
 } else {
     logMismatch(th,f);
