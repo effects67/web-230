@@ -1,3 +1,11 @@
+
+var header = require('../header.js'); 
+console.log(header.display("Exercise 1.5", "Gabriel", "Vance", "Displays employee strings and outputs")); 
+
+
+
+
+
 var myFirstName = "Gabriel";
 var myLastName = "Vance";
 var todaysDate = new Date().toLocaleDateString();

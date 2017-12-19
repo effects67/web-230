@@ -23,6 +23,9 @@ var header = require('../header.js');
 */ 
 
 
+ 
+
+
 
 // functions 
 function match(ex1,ex2) {
@@ -54,7 +57,8 @@ var f="Four";
 
 
 // Output from the match() function... 
-console.log(header.display("Gabriel", "Vance", "Exercise 3.2")); 
+var header = require('../header.js'); 
+console.log(header.display("Exercise 3.2", "Gabriel", "Vance", "Displays Match and if/else loop")); 
 console.log(match("A", "B"));
 console.log(match(2, 2)); 
 

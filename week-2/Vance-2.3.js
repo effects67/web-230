@@ -31,7 +31,8 @@ function myName() {
 
 // output 
 
-console.log(header.display("Gabriel", "Vance", "Exercise 2.3")); 
+console.log(header.display("Exercise 2.3", "Gabriel", "Vance", "Displays myName function")); 
+
 console.log('\n'+ "Hello" + " " + myName() + "!"); 
 
 

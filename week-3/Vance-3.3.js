@@ -32,7 +32,7 @@ if (eventKeyCode == 13) {
     console.log("Unrecognized key press"); 
 }
 */
-console.log(header.display("Gabriel", "Vance", "Exercise 3.3")); 
+console.log(header.display("Exercise 3.3", "Gabriel", "Vance", "Displays Switch Loops")); 
 
 
 

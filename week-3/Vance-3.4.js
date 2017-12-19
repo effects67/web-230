@@ -33,7 +33,7 @@ var header = require('../header.js');
 
 */ 
 
-console.log(header.display("Gabriel", "Vance", "Exercise 3.4")); 
+console.log(header.display("Exercise 3.4", "Gabriel", "Vance", "Displays For and While Loops")); 
 
 // test variable
 

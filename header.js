@@ -15,11 +15,14 @@
         a = assignment number
     and displays the results.
 */
+var k="Professor Krasso"
 
 module.exports = {
-    display: function(f, l, a) {
-        var msg = "\n" + f + " " + l + "\n" 
-            + a + "\nDate: " + new Date().toLocaleDateString(); 
+    display: function(a, f, l, d) {
+        var msg = "\n" + "Title:" + " " + a + "\n" +  "Author:" + " "+ k 
+             + "\nDate: " + new Date().toLocaleDateString() + "\n" + "Modified By:" + " " + f + " " + l  +
+             "\n" + "Description:" + " " + d + "\n"
         return msg; 
     }
 };
+

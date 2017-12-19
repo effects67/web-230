@@ -12,6 +12,10 @@
     Zip code 
 */ 
 
+
+var header = require('../header.js'); 
+console.log(header.display("Exercise 1.4", "Gabriel", "Vance", "Displays var outputs")); 
+
 var firstName="Gabriel";
 var lastName="Vance";
 var age="24";
