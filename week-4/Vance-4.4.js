@@ -1,5 +1,5 @@
 var header = require('../header.js');
-console.log(header.display("Exercise 4.3", "Gabriel", "Vance", "Displays filtering array output")); 
+console.log(header.display("Exercise 4.4", "Gabriel", "Vance", "Displays filtering/sorted array output")); 
 
 
 /*
