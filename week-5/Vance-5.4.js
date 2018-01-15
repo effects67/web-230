@@ -1,4 +1,6 @@
 var header = require('../header.js');
+console.log(header.display("Exercise 5.4", "Gabriel", "Vance", "Displays filtering/reducing complex data structures")); 
+
 
 /*
 Expected output:
