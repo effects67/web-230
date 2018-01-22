@@ -1,4 +1,5 @@
 var header = require('../header.js');
+console.log(header.display("Exercise 6.4", "Gabriel", "Vance", "Displays a nestled object")); 
 
 /*
  Expected output:
