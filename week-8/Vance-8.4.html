@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 8.4</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="site.css">
+
+
+</head>
+<body>
+        <div>
+                <p>Title:  Final 8.4</p>
+                <p>Author: Professor Krasso </p>
+                <a href="javascript:alert(new Date().toLocaleDateString())"> Date </a>
+                <p>Modified By: Gabriel Vance</p>
+                <p>Description: All JS from Web-230 applied</p>
+                </div>
+
+<div id="emp"></div>
+
+<script type="text/javascript">
+
+function Worker(id, firstName, lastName, title){
+    this.id=id;
+    this.firstName=firstName;
+    this.lastName=lastName;
+    this.title=title;
+
+}
+
+var Work= [
+    new Worker("1","Thomas","Edison","Software Engineer"),
+    new Worker("2","Benjamin","Franklin","Programmer"),
+    new Worker("3","Nikola","Tesla","Software Engineer"),
+    new Worker("4","Charles","Babbage","Project Manager"),
+    new Worker("5","Alexander","Bell","Business Analyst")
+
+
+]
+
+
+/*    alternative array
+
+    // employee array
+    var emp = [
+    {id:'1',
+    firstName:'Thomas',
+    lastName: 'Edison',
+    title:'Software Engineer',
+    },
+    {id:'2',
+    firstName:'Benjamin',
+    lastName: 'Franklin',
+    title:'Programmer',
+    },
+    {id:'3',
+    firstName:'Nikola',
+    lastName: 'Tesla',
+    title:'Project Manager',
+    },
+    {id:'4',
+    firstName:'Charles',
+    lastName: 'Babbage',
+    title:'Progrect Manager',
+    },
+    {id:'5',
+    firstName:'Alexander',
+    lastName: 'Bell',
+    title:'Business Analyst',
+    },
+  
+   ];
+*/
+    // getEmployee(id) function
+    function getWorker(id) {
+        var employee= "";
+        Work.forEach(
+            
+            function(a,b,a){
+
+            if(a[b].id===id){
+                employee=a[b];
+            }
+        });
+
+        return (employee.id + " " + employee.firstName + " " + employee.lastName + " " + employee.title);
+
+    }
+
+    // output string variable
+    var out = "<h1>Employee Listing</h1>";
+        out += "<table id='employee'>";
+        out += "<thead><tr><th>Id</th><th>First Name</th><th>Last Name</th><th>Title</th></tr></thead>";
+        out += "<tbody><tr>";
+
+    // for loop
+    for (var x = 0; x < Work.length; x++) { 
+    out += "<td>" + Work[x].id + "</td><td>" + Work[x].firstName + "</td><td>" + Work[x].lastName + "</td><td>"+
+        Work[x].title  + "</td></tr>";
+}
+
+"</tbody></table>"
+
+    // innerHTML call
+    document.getElementById('emp').innerHTML = out;
+
+
+    // jQuery onClick event
+    $(function () {
+        $("table tr").click(function () {
+
+            var id = $(this).find('td:first').html();
+
+            alert( getWorker(id));
+
+
+        })
+    });
+</script>
+</body>
+</html>
